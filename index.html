@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rockstar Saloon Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Rockstar Saloon Shop 💈</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+      <a href="#booking">Book</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Your Style, Our Passion</h2>
+    <button onclick="window.location.href='#booking'">Book Appointment</button>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>✂️ Haircut - ₹100</li>
+      <li>🪒 Shaving - ₹50</li>
+      <li>💆 Facial - ₹200</li>
+      <li>🎨 Hair Coloring - ₹500</li>
+    </ul>
+  </section>
+
+  <section id="about">
+    <h2>About Rockstar Saloon</h2>
+    <p>We have been providing top-notch grooming services for 10+ years. Visit us for a Rockstar look!</p>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+      <img src="images/img1.jpg" alt="style1" style="width: 100px;">
+      <img src="images/img2.jpg" alt="style2" style="width: 100px;">
+      <img src="images/img3.jpg" alt="style3" style="width: 100px;">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>📞 Call: 98765XXXXX</p>
+    <p>📍 Location: Your city address</p>
+    <p>📱 WhatsApp: <a href="https://wa.me/91 9014804271">Chat with us</a></p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <section id="booking">
+    <h2>Book Your Appointment</h2>
+    <form id="bookingForm">
+      <label>Name:</label><br>
+      <input type="text" name="name" required><br>
+      <label>Phone Number:</label><br>
+      <input type="tel" name="phone" required><br>
+      <label>Select Service:</label><br>
+      <select name="service">
+        <option>Haircut</option>
+        <option>Shaving</option>
+        <option>Facial</option>
+        <option>Hair Coloring</option>
+      </select><br>
+      <label>Date:</label><br>
+      <input type="date" name="date" required><br>
+      <label>Time:</label><br>
+      <input type="time" name="time" required><br><br>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Rockstar Saloon Shop. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
